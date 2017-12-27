@@ -3,7 +3,7 @@
 The project includes 3 parts: preprocessing, training, and deployment.
 
 The Top-level directory layout is:
-
+```
 .
 ├── code
 │	├── preprocess.py                    # source code for preprocessing and augmenting the training and validation data
@@ -31,7 +31,7 @@ The Top-level directory layout is:
     ├── preprocess.bat                   # Batch file for running preprocess.py
     ├── train.bat                        # Batch file for running residual_train.py and then running squeeze_train.py
     └── deploy.bat                       # Batch file for running deploy.py
-
+```
 ### Prerequisites
 
 1. Windows 10 operating system
