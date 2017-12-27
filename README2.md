@@ -1,7 +1,6 @@
 # Pulmonary nodule classification system based on Keras 2.0
 
 The project includes 3 parts: preprocessing, training, and deployment.
-
 The Top-level directory layout is:
 ```
 .
