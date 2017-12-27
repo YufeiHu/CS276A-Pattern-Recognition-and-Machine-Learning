@@ -6,10 +6,10 @@ The Top-level directory layout is:
 ```
 .
 ├── code
-│	├── preprocess.py                    # source code for preprocessing and augmenting the training and validation data
-│	├── residual_train.py                # source code for training a 3D CNN model with residual blocks
-│	├── squeeze_train.py                 # source code for training a 3D squeeze-net model
-│	└── deploy.py                        # source code for deploying the classification system on original validation data
+│   ├── preprocess.py                    # source code for preprocessing and augmenting the training and validation data
+│   ├── residual_train.py                # source code for training a 3D CNN model with residual blocks
+│   ├── squeeze_train.py                 # source code for training a 3D squeeze-net model
+│   └── deploy.py                        # source code for deploying the classification system on original validation data
 ├── data                    
 │   ├── original
 │   │   ├── lung-train-label_0.h5        # Original training data with label 0
