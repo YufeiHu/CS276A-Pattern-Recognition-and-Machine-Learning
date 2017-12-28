@@ -1,6 +1,7 @@
 # Pulmonary nodule classification system based on Keras 2.0
 
 The project includes 3 parts: preprocessing, training, and deployment.
+
 The Top-level directory layout is:
 ```
 .
@@ -21,15 +22,16 @@ The Top-level directory layout is:
 │   │   ├── 7764                         
 │   │   │   ├── squeeze_model.h5         # First pretrained 3D squeeze-net Keras model
 │   │   │   └── train_mean.npy           # Corresponding data mean
-│   │   ├── 7785                         
-│   │   │   ├── squeeze_model.h5         # Second pretrained 3D squeeze-net Keras model
-│   │   │   └── train_mean.npy           # Corresponding data mean
+│   │   └── 7785                         
+│   │       ├── squeeze_model.h5         # Second pretrained 3D squeeze-net Keras model
+│   │       └── train_mean.npy           # Corresponding data mean
 │   ├── residual                         # Empty for now. Used to store the model and mean data trained by running residual_train.py
 │   └── squeeze                          # Empty for now. Used to store the model and mean data trained by running squeeze_train.py
-└── script
-    ├── preprocess.bat                   # Batch file for running preprocess.py
-    ├── train.bat                        # Batch file for running residual_train.py and then running squeeze_train.py
-    └── deploy.bat                       # Batch file for running deploy.py
+├── script
+│   ├── preprocess.bat                   # Batch file for running preprocess.py
+│   ├── train.bat                        # Batch file for running residual_train.py and then running squeeze_train.py
+│   └── deploy.bat                       # Batch file for running deploy.py
+└── FinalReport.pdf
 ```
 ### Prerequisites
 
@@ -54,8 +56,8 @@ set KERAS_BACKEND=tensorflow
 A step-by-step instruction telling you how to run preprocessing, training, and deploying.
 
 1. Under root directory, go to `.\script`
-2. Double click `preprocess.bat`
-3. Double click `train.bat` (For saving your time, the default training number of epochs for both models is 5. However, you can adjust it in `residual_train.py` and `squeeze_train.py` easily)
-4. Double click `deploy.bat` (You should see the results in cmd and in a separate window)
+2. Double click `preprocess.bat` (If you want to run unit_test for `preprocess.py`, please uncomment line 481 in `preprocess.py`)
+3. Double click `train.bat` (For saving your time, the default training number of epochs for `squeeze_train.py` is 5 and for `residual_train.py` is 2. However, you can adjust it in `squeeze_train.py` and `residual_train.py` easily)
+4. Double click `deploy.bat` (You should see the results both in cmd and in a separate window)
 
 All done!
