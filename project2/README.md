@@ -2,4 +2,4 @@
 
 This project implemented a face detector based on AdaBoost. The effect is shown below:
 
-![demo](https://raw.githubusercontent.com/YufeiHu/CS276A-Pattern-Recognition-and-Machine-Learning/master/demo.jpg) 
+![demo](https://github.com/YufeiHu/CS276A-Pattern-Recognition-and-Machine-Learning/blob/master/project2/demo.jpg) 
